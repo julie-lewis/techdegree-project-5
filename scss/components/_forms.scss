@@ -1,0 +1,21 @@
+.form__input {
+  width: 100%;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  border: 0;
+    border-bottom: 3px solid $color-primary;
+    outline: 0;
+  &::placeholder {
+    font-size: em(12px);
+    padding: $gutter;
+    color: darken($color-text-base, 10%);
+    font-weight: 600;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.form__label--hidden {
+  display: none;
+}

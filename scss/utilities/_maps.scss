@@ -1,0 +1,17 @@
+$grid-background-colors: (
+	grid__col--12 : $mediumaquamarine,
+	grid__col--8  : $lightsalmon,
+	grid__col--7  : $tan,
+	grid__col--6  : $cadetblue,
+  	grid__col--5  : $lightgreen,
+	grid__col--4  : $lightskyblue,
+	grid__col--3  : $plum
+);
+
+$button-background-colors: (
+	btn--default    : $color-seconary,
+	btn--success    : $lightgreen,
+	btn--error      : $lightcoral,
+	btn--warning    : $coral,
+  btn--info       : $plum,
+);

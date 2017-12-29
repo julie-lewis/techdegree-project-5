@@ -1,0 +1,59 @@
+// Descriptive color variables
+$white            : #fff;
+$black            : #000;
+$light-grey       : #6d6d6d;
+$mediumaquamarine : #67e1bf;
+$lightskyblue     : #6adafb;
+$lightgreen       : #8ada9f;
+$lightcoral       : #dd757b;
+$coral            : #f57a5b;
+$mediumpurple     : #9475bf;
+$cadetblue        : #54a7c8;
+$plum             : #deaded;
+$tan              : #e79ea2;
+$lightsalmon      : #f6a086;
+
+// Functional color variables
+$color-primary      : $mediumaquamarine;
+$color-seconary     : $lightskyblue;
+
+$color-text-light   : $white;
+$color-text-base    : $light-grey;
+
+$color-headline     : $color-primary;
+
+
+//Font weights
+$font-thin       : 100;
+$font-light      : 300;
+$font-medium     : 600;
+$font-bold       : 700;
+$font-ultra-bold : 900;
+
+// Text
+$font-size       : 16px;
+$line-height     : 24px;
+
+// Paddings and Margins
+$gutter          : .25em;
+
+// Font stacks
+
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+// Border radius
+$br: .25em;
+
+// Grid
+$column-width    : 65px !default;
+$column-gutter   : 20px !default;
+$column-items    : 12 !default;
+
+$max-width       : 1050px;
+
+// Media query breakpoints
+$breakpoint-sm: 1px;
+$breakpoint-md: 768px;

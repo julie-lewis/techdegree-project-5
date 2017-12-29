@@ -1,0 +1,31 @@
+// Headings
+.headline--primary {
+  color: $color-primary;
+  font-weight: $font-medium;
+  font-size: em(32px);
+  line-height: (46px/42px);
+}
+
+.headline--secondary {
+  font-weight: $font-medium;
+  font-size: em(20px);
+  margin: 0 0 24px 0;
+}
+
+.blockquote {
+  border-left: 5px solid $color-primary;
+  border-radius: $br;
+  padding-left: 10px;
+  font-style: italic;
+  font-size: em(18px);
+  color: $color-text-base;
+  margin: 25px 15px 10px 25px;
+  line-height: 1.3;
+  font-weight: $font-light;
+}
+
+.link {
+  color: $color-seconary;
+  text-decoration: none;
+  font-weight: $font-medium;
+}

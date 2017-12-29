@@ -1,0 +1,16 @@
+// Calculate em values
+@function em($target, $context: $font-size) {
+  @return ($target / $context) * 1em;
+}
+
+// Set the "context" width for the grid
+@function grid-context($column-width, $column-items ,$column-gutter) {
+  $grid-context: ($column-width * $column-items) + ($column-gutter * ($column-items - 1));
+  @return $grid-context;
+}
+
+// Import if Google Fonts URL is defined
+
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}

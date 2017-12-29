@@ -1,0 +1,30 @@
+.grid__row:first-of-type {
+  // text-align: center;
+  @include media(medium) {
+    align-items: center;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include media(medium) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  &__item  {
+    list-style: none;
+  }
+  &__item a {
+    text-decoration: none;
+    color: $color-text-base;
+    display: block;
+    padding: 10px 15px;
+    &:hover {
+      color: $color-text-light;
+      background: $color-primary;
+      border-radius: $br;
+    }
+  }
+}

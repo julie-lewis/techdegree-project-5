@@ -1,0 +1,46 @@
+.container{
+  max-width: $max-width;
+  margin: auto;
+  padding: em(30px);
+}
+
+[class^="grid__col"] {
+  margin-bottom: $gutter;
+  padding: 10px;
+  @include media(medium) {
+    @include margin-left(percentage($column-gutter / $context));
+    // display: flex;
+    // justify-content: space-around;
+  }
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  @include media(medium) {
+    flex-direction: row;
+  }
+}
+
+// Create grid backgrounds
+@each $value, $color in $grid-background-colors {
+	.#{$value}.theme__colors {
+		background-color: $color;
+	}
+}
+
+.theme__colors {
+  border-radius: $br;
+  @include media(medium) {
+    text-align: center;
+  }
+}
+
+//fix this up later
+.grid__col--12 {
+  @include media(medium) {
+    display: flex;
+    justify-content: space-around;
+  }
+}

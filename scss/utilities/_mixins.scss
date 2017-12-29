@@ -1,0 +1,52 @@
+// Media query Mixins
+@mixin media($break) {
+  @if $break == "small" {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      @content;
+    }
+  }
+  // build the grid layout here
+  @else if $break == "medium" {
+    @media (min-width: $breakpoint-md + 1) {
+      .grid__col {
+      		@include flexbox-grid-layout;
+      }
+      @content;
+    }
+  }
+  @else {
+    @error "No value could be retrieved for `#{$break}`. ";
+  }
+}
+
+// Adjacent sibling margins
+@mixin margin-left($margin: 1em) {
+  & + & {
+   margin-left: $margin;
+   @content;
+  }
+}
+
+// Flex grid columns
+@mixin flexbox-grid-layout {
+  @for $i from 1 through $column-items {
+    $context: grid-context($column-width, $column-items ,$column-gutter) !global;
+    $target: ($column-width * $i) + ($column-gutter * ($i - 1));
+    // modifier classes
+    &--#{$i} {
+      flex-basis: percentage($target / $context);
+    }
+  }
+}
+
+// BEM Mixins
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}

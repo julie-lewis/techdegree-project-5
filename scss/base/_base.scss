@@ -1,0 +1,24 @@
+// the universal selector (*)
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  line-height: ($line-height/$font-size);
+}
+
+.container {
+  margin-top: 3em;
+  font: 1em/1.5 $font-family--primary;
+  color: lighten($color-text-base, 10%);
+}
+
+img, button {
+  max-width: 100%;
+}
+
+// ul elements
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+
+}

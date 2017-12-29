@@ -1,0 +1,15 @@
+[class^="img"] {
+  @extend %image;
+  @extend .centered;
+}
+
+.img--logo {
+  @include media(medium) {
+    margin-bottom: 0;
+  }
+}
+
+.img--frame {
+    border: 1px solid lighten($light-grey, 30%);
+    padding: 10px;
+}
